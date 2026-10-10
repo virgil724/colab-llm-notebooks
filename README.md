@@ -2,6 +2,14 @@
 
 在 Google Colab 上跑 LLM / VLM 的 notebook 收藏。
 
+## Colab 運算單元哪裡來
+
+訂閱 **Google AI Pro** 方案會附 **200 個 Colab 運算單元(compute units / credits)**,不用另外買 Colab Pro 就能選 A100、G4 這類高階 GPU 來跑這裡的 notebook。
+
+- 高階 GPU 連線期間會持續消耗運算單元,用完記得中斷並刪除執行階段。
+- 有運算單元不代表一定分配得到 A100 / G4,尖峰時段可能選不到。
+- 實際額度與方案內容以 Google 官方說明為準。
+
 ## qwen/
 
 | Notebook | 說明 |
@@ -27,4 +35,8 @@
 
 ## 使用方式
 
-在 Colab 選「檔案 → 開啟筆記本 → GitHub」,勾選「包含私人存放區」後選擇這個 repo 的 notebook。
+把 GitHub 網址的 `github.com` 換成 `colab.research.google.com/github` 就能直接在 Colab 開啟,例如:
+
+<https://colab.research.google.com/github/virgil724/colab-llm-notebooks/blob/main/qwen/qwen38_27b_vllm_300k.ipynb>
+
+或在 Colab 選「檔案 → 開啟筆記本 → GitHub」,輸入 `virgil724/colab-llm-notebooks`。
